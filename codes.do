@@ -71,6 +71,7 @@ reg re78 treated re75 age age2 educ black hispanic nodegree
 reg re78 treated re75 age age2 educ black hispanic nodegree married
 
 
+********************************************************************
 *Test endogeneity for columns 8 and 9
 clear all
 use "C:\Users\Altair\Desktop\研二\实证方法\paper replication\nsw.dta" 
@@ -95,33 +96,3 @@ append using "C:\Users\Altair\Desktop\研二\实证方法\paper replication\psid
 gen growth=re78-re75
 replace age2=age^2
 correlate treated re75 age age2 educ black hispanic nodegree married
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
