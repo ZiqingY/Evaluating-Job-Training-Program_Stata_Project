@@ -1,3 +1,7 @@
+* The below 4 sessions generate elements in the upper 4 rows in Table 1 of the report, which are the estimated earning growth from the training program
+* Different models are used for estimations, with each column of Table 1 indicating one model
+* The last session test endogeneity of the linear model regressors to evaluate the model 
+
 *First row
 clear all
 use "C:\Users\Altair\Desktop\研二\实证方法\paper replication\nsw.dta" 
@@ -69,7 +73,6 @@ reg growth treated age age2
 reg re78 treated re75
 reg re78 treated re75 age age2 educ black hispanic nodegree
 reg re78 treated re75 age age2 educ black hispanic nodegree married
-
 
 
 
